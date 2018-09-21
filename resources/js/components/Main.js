@@ -137,7 +137,7 @@ handleAddProduct(product) {
         }
         return (
             <div>
-                <MenuTest />
+           
                 <div style={mainDivStyle}>
                     <div style={divStyle}>
                         <h3>All Products</h3>

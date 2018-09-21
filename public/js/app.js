@@ -37885,7 +37885,6 @@ var Main = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__MenuTest__["a" /* default */], null),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { style: mainDivStyle },
@@ -58982,13 +58981,15 @@ var AddProduct = function (_Component) {
         value: function handleInput(key, e) {
             /* Duplicating and updating the state */
 
-            if (key == 'price') {
-                var re = /^[0-9\b]+$/;
-                e.target.value = e.target.value.replace(e.target.value, re);
-                var temp = e.target.value;
-                e.target.value = temp.substring(0, temp.length - 1);
-            }
-
+            /*
+              if (key == 'price') {
+                  const re = /^[0-9\b]+$/;
+                  e.target.value = e.target.value.replace(e.target.value,re);
+                  var temp = e.target.value;
+                  e.target.value = temp.substring(0, temp.length - 1);
+              
+             }
+              */
             var state = Object.assign({}, this.state.newProduct);
             state[key] = e.target.value;
             this.setState({ newProduct: state });
@@ -59229,7 +59230,7 @@ var Topic = function Topic(_ref2) {
   );
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (MenuTest);
+/* unused harmony default export */ var _unused_webpack_default_export = (MenuTest);
 
 /***/ }),
 /* 68 */

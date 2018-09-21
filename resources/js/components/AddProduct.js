@@ -27,7 +27,7 @@ class AddProduct extends Component {
     handleInput(key, e) {
         /* Duplicating and updating the state */
 
-      
+      /*
         if (key == 'price') {
             const re = /^[0-9\b]+$/;
             e.target.value = e.target.value.replace(e.target.value,re);
@@ -35,7 +35,7 @@ class AddProduct extends Component {
             e.target.value = temp.substring(0, temp.length - 1);
         
        }
-        
+        */
         var state = Object.assign({}, this.state.newProduct);
         state[key] = e.target.value;
         this.setState({ newProduct: state })
