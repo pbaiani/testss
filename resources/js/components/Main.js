@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Product from './Product';
 import AddProduct from './AddProduct';
+import MenuTest from './MenuTest';
 
 /* An example React component */
 class Main extends Component {
@@ -136,6 +137,7 @@ handleAddProduct(product) {
         }
         return (
             <div>
+                <MenuTest />
                 <div style={mainDivStyle}>
                     <div style={divStyle}>
                         <h3>All Products</h3>
